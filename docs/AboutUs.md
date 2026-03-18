@@ -18,6 +18,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 [[github](https://github.com/lukeetann)]
 
 * Role: Developer
+* Responsibilities: Contact management + UI
 
 ### Eugenio Manansala
 
@@ -26,6 +27,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 [[github](http://github.com/Egg-Fish)]
 
 * Role: Developer
+* Responsibilities: Group management + UI
 
 ### Ngui Jia Le Sherlena
 
@@ -35,7 +37,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 [[github](https://github.com/C4RR0T02)]
 
 * Role: Developer
-* Responsibilities: Data
+* Responsibilities: Companies management + UI
 
 ### Nicholas Ling
 
@@ -44,7 +46,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 [[github](http://github.com/niclzy)]
 
 * Role: Developer
-* Responsibilities: Dev Ops + Threading
+* Responsibilities: Data + List management
 
 ### Zuriel Shanley Tanyory
 
@@ -53,4 +55,4 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 [[github](http://github.com/leiruz)]
 
 * Role: Developer
-* Responsibilities: Data
+* Responsibilities: Search + Data
