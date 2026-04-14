@@ -62,10 +62,15 @@ pageNav: 4
           * [Company Profile Non-Functional Requirements](#company-profile-non-functional-requirements)
         * [Glossary](#glossary)
     * [Appendix: Instructions for manual testing](#appendix-instructions-for-manual-testing)
-        * [Launch and shutdown](#launch-and-shutdown)
-        * [Adding a person](#adding-a-person)
-        * [Editing a person](#editing-a-person)
-        * [Deleting a person](#deleting-a-person)
+        * [Launch and shutdown](#launch-and-shutdown-test)
+        * [Adding a person](#adding-a-person-test)
+        * [Editing a person](#editing-a-person-test)
+        * [Deleting a person](#deleting-a-person-test)
+        * [Adding a group](#adding-a-group-test)
+        * [Deleting a group](#deleting-a-group-test)
+        * [Assigning a contact to a group](#assigning-a-contact-to-a-group-test)
+        * [Unassigning a contact from a group](#unassigning-a-contact-from-a-group-test)
+        * [Adding a company](#adding-a-company-test)
         * [Saving data](#saving-data)
 
 --------------------------------------------------------------------------------------------------------------------
@@ -2039,7 +2044,7 @@ These instructions only provide a starting point for testers to work on; testers
     2. Re-launch the app by double-clicking the jar file.<br>
        Expected: The most recent window size and location is retained.
 
-### Adding a person
+### Adding a person test
 1. Adding a person with valid details
 
     Prerequisites: Launch the application. The contact list is visible.
@@ -2078,7 +2083,7 @@ These instructions only provide a starting point for testers to work on; testers
     6. Test case: `add /n InvalidEmail /p 89606058 /e invalid-email`<br>
        Expected: No contact is added. Error details shown in the status message.
 
-### Editing a person
+### Editing a person test
 1. Editing a person's details with valid details
 
     Prerequisites: List all persons using the `list` command. Multiple persons in the list.
@@ -2111,7 +2116,7 @@ These instructions only provide a starting point for testers to work on; testers
     5. Test case: `edit 1 /p 2345678`<br>
       Expected: No contact is updated. An error indicating contact number already exist shown in the status message.
 
-### Deleting a person
+### Deleting a person test
 
 1. Prerequisites: List all persons using the `list` command. Multiple persons in the list.
 
@@ -2137,7 +2142,7 @@ These instructions only provide a starting point for testers to work on; testers
     3. Other incorrect delete commands to try: `delete`, `delete /n`, `...`<br>
         Expected: Invalid command format error details shown in the status message.
 
-### Adding a contact group
+### Adding a contact group test
 
 1. Adding a contact group with valid details
 
@@ -2172,7 +2177,7 @@ These instructions only provide a starting point for testers to work on; testers
     3. Test case: `grpadd /g NewGroup /n Donald Duck`<br>
         Expected: No contact group is added. An error indicating contact does not exist message shown in the status message.
 
-### Deleting a contact group
+### Deleting a contact group test
 
 1. Deleting a contact group with valid details
 
@@ -2194,7 +2199,7 @@ These instructions only provide a starting point for testers to work on; testers
     2. Test case: `grpdel /g NonExistentGroup`<br>
         Expected: No contact group is deleted. An error indicating contact group does not exist message shown in the status message.
 
-### Assigning a contact to a contact group
+### Assigning a contact to a contact group test
 
 1. Assigning a contact to a contact group with valid details
 
@@ -2222,7 +2227,7 @@ These instructions only provide a starting point for testers to work on; testers
     4. Test case: `grpassign /g Software Engineers /n Donald Duck`<br>
         Expected: No contact is assigned to the contact group. An error indicating contact does not exist message shown in the status message.
 
-### Unassigning a contact from a contact group
+### Unassigning a contact from a contact group test
 
 1. Unassigning a contact to a contact group with valid details
 
@@ -2253,7 +2258,7 @@ These instructions only provide a starting point for testers to work on; testers
     5. Test case: `grpunassign /g Software Engineers /n Mary Doe`<br>
        Expected: No contact is unassigned to the contact group. An error indicating contact is not in the contact group message shown in the status message.
 
-### Adding a company
+### Adding a company test
 
 1. Adding a company with valid details
 
@@ -2275,7 +2280,7 @@ These instructions only provide a starting point for testers to work on; testers
     2. Test case: `cmpadd /d A company `<br>
        Expected: No company is added. An error indicating invalid command format as it is missing the prefix for name.
 
-### Adding a company role
+### Adding a company role test
 
 1. Adding a company role with valid details
 
